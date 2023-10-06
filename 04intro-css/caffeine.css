@@ -38,11 +38,11 @@ nav a{
     padding: .83rem 2rem;
 }
 nav li.active a{
-    background-color: #fefae0;
+    background-color: #cad5ae;
         color:#606c38;
 }
 nav a:hover {
-    color: #fff;
+    color: #bc6c25;
 }
 
 
