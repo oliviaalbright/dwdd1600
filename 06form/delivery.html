@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Boxed Brews: Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Subscription based Coffee service for the convinience of busy schedules and minds">
+        <meta name="author" content="Olivia Albright">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+        
+          <link rel="stylesheet" href="caffeine.css">
+    </head>
+    <body>
+         <!-- Start of the page header -->
+        <header>
+            <h1>Boxed Brews</h1>
+            <p>Coffee at your convenience</p>
+        </header>
+         <!-- Start of the page navigation -->
+        <nav>
+        <ul>
+           <li ><a href="index.html">Subscription Service</a></li> 
+           <li><a href="about.html">About Us</a></li> 
+           
+            <li><a href="drinks.html">Drinks</a></li>
+              <li class="active"><a href="delivery.html">Request a Delivery</a></li>
+            </ul>
+        </nav>
+         <!-- Start of the page content -->
+        <main>
+        <h1>Request a Delivery</h1>
+            <form method="get" class="myForm" action="thanks.html"></form>
+            
+            <fieldset>
+            <legend> Customer Information </legend>
+                <label> First Name*<input type="text" name="fname" required></label>
+                   <label> Last Name*<input type="text" name="lname" required></label>
+                   <label> Cell Number*<input type="tel" name="phone" required ></label>
+            </fieldset>
+            
+            <fieldset>
+            <legend> Delivery Method </legend>
+                <label><input type="radio" name="method" value="truck"> Truck Delivery (2-3 business days)</label>
+                 <label><input type="radio" name="method" value="bike"> Bike Delivery (4-6 business days)</label>
+                 <label><input type="radio" name="method" value="plane"> Flight delivery (2 hrs)</label>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Delivery Options</legend>
+                <label><input type="checkbox" name="door" value="chosen"> Doorstep</label>
+                 <label><input type="checkbox" name="back" value="chosen"> Backdoor</label>
+                 <label><input type="checkbox" name="driveway" value="chosen"> End of the Driveway</label>
+                 <label><input type="checkbox" name="garage" value="chosen"> Outside the garage</label>
+                
+                <label> Preferred Delivery Time
+                <select name="time"> <option value="none">Please Select</option>
+            
+                <option value="morning"> Between 8:00am-10:00am</option>
+                 <option value="noon"> Between 10:00am-1:00pm</option>
+                 <option value="afternoon"> Between 1:00pm-4:00pm</option>
+                 <option value="evening"> Between 4:00pm-8:00pm</option>
+                </select>
+            </label>
+            </fieldset>
+            
+        <label>Comments
+         <textarea name="comments"></textarea>  
+            </label>
+            
+            <input type="submit" value="Send Delivery Request">
+            
+           
+        </main>
+        
+         <!-- Start of the page footer -->
+        <footer>
+        <p>&copy; 2023 &bull; Olivia Albright &bull;<a href="mailto:olivia.j.albright@gmail.com">Email Us</a></p>
+        
+            
+        </footer>
+        
+        
+    </body> 
+</html>
