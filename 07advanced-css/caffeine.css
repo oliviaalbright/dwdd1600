@@ -30,29 +30,36 @@ header p {
 
 /*small screens*/
 @media only screen and (max-width: 800px) {
+    nav {
+        /* Add styles to make it a vertical format */
+        flex-direction: column;
+    }
+
     nav ul {
         margin: 0;
-        padding: 0 2vw;
+        padding: 0;
         list-style-type: none;
+        display: flex;
+        flex-direction: column; /* Make it a vertical list */
     }
+
     nav a {
         display: block;
         padding: .8rem;
         text-decoration: none;
         font-weight: 700;
-         text-transform: uppercase;
+        text-transform: uppercase;
         text-align: center;
         border-bottom: solid 1px #aaa;
         color: #8C501B;
-        
-        
     }
+
     nav .active a {
         background-color: #8C501B;
         background-image: linear-gradient(to bottom, #8C501B, #653a19);
         color: white;
     }
-}/*end of the media query*/
+} /* end of the media query */
 
 /*BIG screens*/
 @media only screen and (min-width: 801px) {
@@ -92,8 +99,8 @@ header p {
 
 
 
-navl ul {
-    background-color: #fefea0;
+nav ul {
+    background-color: white;
 }
 nav ul{
     list-style-type: none;
