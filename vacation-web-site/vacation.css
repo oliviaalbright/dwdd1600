@@ -1,0 +1,339 @@
+/* prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+
+body {
+font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;  
+}
+
+header {
+    background-color: #C3D7E3;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 2vw;
+}
+header h1{
+    margin: 0;
+    color: #19293C;
+}
+header p {
+    margin: 0;
+    color: #376288;
+    letter-spacing: 0.5px;
+}
+
+/*small screens*/
+@media only screen and (max-width: 800px) {
+    nav {
+        /* Add styles to make it a vertical format */
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column; /* Make it a vertical list */
+    }
+
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #F59E64;
+    }
+
+    nav .active a {
+        background-color: #F59E64;
+        background-image: linear-gradient(to bottom, #8C501B, #F78F49);
+        color: white;
+    }
+} /* end of the media query */
+
+/*BIG screens*/
+@media only screen and (min-width: 801px) {
+    
+    nav {
+        border-top: solid 1px #E0E6E6;
+    } 
+    nav ul {
+        margin:0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+    nav a {
+        display:block;
+        padding: 1.2rem 1rem .3rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #8C501B;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 2px #fff;
+    }
+    nav .active a {
+        border-bottom: solid 2px #F78F49;
+    }
+    nav a:hover {
+        color: #000;
+    }
+    
+    
+  
+}/*end of the media query*/
+
+
+
+
+
+nav ul {
+    background-color: white;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #19293C;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a{
+    background-color: #FCBE77;
+        color:#376288;
+}
+nav a:hover {
+    color: #F78F49;
+}
+
+
+/* stuff for the main*/
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #19293C;
+}
+
+main h2 {
+    color: #376288;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #19293C;
+    margin: 0 0 .3rem 0;
+}
+
+mail ol {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+}
+
+main dl dt {
+   color: #376288;
+    font-weight: 700;
+}
+main dl dd {
+   color:  #19293C;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #FCBE77;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #F78F49;
+    border-radius: 5px;
+}
+
+main a {
+    color: #19293C;
+}
+main a:hover {
+    color:#376288;
+}
+
+.coffeehero {
+    width: 100%;
+    margin: 0;
+}
+.coffeehero img{
+    width: 100%;
+    height: auto;
+  
+}
+.coffeehero img:hover {
+  box-shadow: 0px 0px 10px black;  
+}
+ 
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+div.gallery img:hover {
+  box-shadow: 0px 0px 10px black;
+}
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+    
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color:#376288;
+}
+
+.myForm fieldset {
+    border: 1px solid #376288;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color:  #376288;
+    font-size: .8rem;
+}
+.myForm label{
+    margin: .5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea {
+    display: block;
+}
+
+
+.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea 
+{
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(195,215,227);
+}
+
+.myForm [type=submit] {
+    background-color: #376288;
+        border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+table.our-reviews {
+    width:100%;
+        border-collapse: collapse;
+}
+
+table.our-reviews th {
+    background-color: #376288;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+table.our-reviews td {
+    color: #19293C;
+    padding:.4rem 2vw;
+}
+
+table.our-reviews tr:nth-child(even) {
+    background-color: #f7f7f7;
+    
+}
+table.our-reviews tr:hover {
+    background-color: rgba(195,215,227);
+}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+
+        figure {
+            margin: 10px;
+            border: 1px solid #ddd; /* Add a border to each figure */
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        } 
+
+
+/* Footer Stuff Here*
+footer {
+    background-color: #C3D7E3;
+    text-align: center;
+    color: #376288;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: #376288;
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+    
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption{
+    text-align: center;
+    font-size: .75rem;
+}
+
+header, nav, main, footer{
+    max-width: 64rem;
+    margin: 0 auto;
+}
