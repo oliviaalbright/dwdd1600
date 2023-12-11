@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Budget Vacations: Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Destinations at the tap of a screen">
+        <meta name="author" content="Olivia Albright">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+        
+          <link rel="stylesheet" href="vacation.css">
+        
+    <link rel="icon" type="images/x-icon" href="favicon.ico">
+    </head>
+    <body>
+         <!-- Start of the page header -->
+        <header>
+            <img src="images/logo.png" alt="site logo" width="93" height="100">
+            <div>
+            <h1>Budget Vacations</h1>
+            <p>Destinations at the tap of a screen</p>
+                </div>
+        </header>
+         <!-- Start of the page navigation -->
+        <nav>
+       <ul>
+           <li><a href="index.html">About Us</a></li>  
+            <li ><a href="packages.html">Vacation Packages</a></li>
+           <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="video.html">Video Information</a></li>
+             <li class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+         <!-- Start of the page content -->
+        <main>
+        <h1>Book a Vacation with us!</h1>
+            <form method="get" class="myForm" action="thanks.html">
+            
+            <fieldset>
+            <legend> Customer Information </legend>
+                <label> First Name*<input type="text" name="fname" required></label>
+                   <label> Last Name*<input type="text" name="lname" required></label>
+                   <label> Cell Number*<input type="tel" name="phone" required ></label>
+            </fieldset>
+            
+            <fieldset>
+            <legend> Vacation Package </legend>
+                <label><input type="radio" name="method" value="paris"> Paris, France</label>
+                 <label><input type="radio" name="method" value="disney"> DisneyLand, California </label>
+                 <label><input type="radio" name="method" value="hilton"> Hilton Head, South Carolina</label>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Number of people in your party</legend>
+                <label><input type="checkbox" name="alone" value="chosen"> One person</label>
+                 <label><input type="checkbox" name="couple" value="chosen"> Two People</label>
+                 <label><input type="checkbox" name="three" value="chosen"> Three people</label>
+                 <label><input type="checkbox" name="four" value="chosen"> Four people </label>
+                 <label><input type="checkbox" name="five" value="chosen"> Five people</label>
+                
+                
+                <label> Children under 2?
+                <select name="time"> <option value="none">Please Select</option>
+            
+                <option value="no"> No Children in my party </option>
+                 <option value="no two"> No Children under 2 years</option>
+                 <option value="yes"> 1 Child Under 2 years</option>
+                 <option value="yes two"> Multiple Children under 2 years </option>
+                </select>
+            </label>
+            </fieldset>
+            
+        <label>Comments, questions, or concerns?
+         <textarea name="comments"></textarea>  
+            </label>
+            
+            <input type="submit" value="Send Vacation Package Request">
+            
+          </form>
+            
+                
+          <h1>Contact Us</h1>
+            
+            <h2>Phone</h2>
+            <p>1-866-272-6272</p>
+            <h2>Email Us</h2>
+            <p>budgetvacations.com</p>
+            <h2>Address</h2>
+            <address>
+            500 W 500 S <br>
+            Orem, UT <br>
+            20408-0001
+            
+            </address>
+            
+    
+        </main>
+        
+         <!-- Start of the page footer -->
+        <footer> 
+        <p>&copy; 2023 &bull; Olivia Albright &bull;<a href="mailto:budgetvacations.com">Email Us</a></p>
+        
+            
+        </footer>
+        
+            
+            </body>
+        </html>
